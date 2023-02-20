@@ -1,0 +1,9 @@
+<nav id='navigation'>
+  <a href='{{ site.url }}' class='navhead'>Top</a>
+  <hr>
+  <div class='links'>
+    {% for proc in site.procedures %}
+      <a href='#{{ proc.title }}' class='navlink'>{{ proc.title }}</a>
+    {% endfor %}
+  </div>
+</nav>
